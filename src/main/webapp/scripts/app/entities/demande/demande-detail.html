@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span>Demande</span> {{demande.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span>Titre</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{demande.titre}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{demande.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>DateDeBesoin</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{demande.dateDeBesoin | date:'medium'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Statut</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'gestionDemandesApp.StatutDemande.' + demande.statut}}">{{demande.statut}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>createur</span>
+                </td>
+                <td>
+                    {{demande.createur.login}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>affectation</span>
+                </td>
+                <td>
+                    {{demande.affectation.login}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>
