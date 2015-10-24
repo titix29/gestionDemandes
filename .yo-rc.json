@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "gestionDemandes",
+    "packageName": "com.mycompany.demandes",
+    "packageFolder": "com/mycompany/demandes",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": false,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "ecd93b0b9342e978fb24536aecfe4464ed7b70db",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}
