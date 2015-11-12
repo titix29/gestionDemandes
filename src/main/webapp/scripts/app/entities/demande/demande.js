@@ -19,6 +19,16 @@ angular.module('gestionDemandesApp')
                 resolve: {
                 }
             })
+			.state('demande.stats', {
+				parent: 'demande',
+				url: '/stats',
+				views : {
+					'content@': {
+						templateUrl: 'scripts/app/entities/demande/demandes-stats.html',
+						controller: 'DemandesStatsController'
+					}
+				}
+			})
             .state('demande.detail', {
                 parent: 'entity',
                 url: '/demande/{id}',
