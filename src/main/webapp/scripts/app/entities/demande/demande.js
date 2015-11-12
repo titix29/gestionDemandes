@@ -24,8 +24,8 @@ angular.module('gestionDemandesApp')
 				url: '/stats',
 				views : {
 					'content@': {
-						templateUrl: 'scripts/app/entities/demande/demandes-stats.html',
-						controller: 'DemandesStatsController'
+						templateUrl: 'scripts/app/entities/demande/demande-stats.html',
+						controller: 'DemandeStatsController'
 					}
 				}
 			})
