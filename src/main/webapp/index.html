@@ -62,6 +62,8 @@
         <!-- endbower -->
         <!-- endbuild -->
 
+	<!-- WTF dependency : pie-chart depends on d3 but this loads index-browserify.js which uses 'require' directive 
+			so need to change index-browserify to d3.min manually -->
 
     <!-- build:js({.tmp,src/main/webapp}) scripts/app.js -->
     <script src="scripts/app/app.js"></script>
