@@ -29,6 +29,7 @@ module.exports = function (config) {
             'main/webapp/bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
             'main/webapp/bower_components/d3/index-browserify.js',
             'main/webapp/bower_components/pie-chart/dist/pie-chart.min.js',
+            'main/webapp/bower_components/ng-csv/build/ng-csv.min.js',
             'main/webapp/bower_components/angular-mocks/angular-mocks.js',
             // endbower
             'main/webapp/scripts/app/app.js',

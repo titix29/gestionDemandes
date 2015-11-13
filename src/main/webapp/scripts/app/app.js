@@ -2,7 +2,7 @@
 
 angular.module('gestionDemandesApp', ['LocalStorageModule', 
                'ui.bootstrap', // for modal dialogs
-    'ngResource', 'ui.router', 'ngCookies', 'ngAria', 'ngCacheBuster', 'ngFileUpload', 'infinite-scroll', 'n3-pie-chart'])
+    'ngResource', 'ui.router', 'ngCookies', 'ngAria', 'ngCacheBuster', 'ngFileUpload', 'infinite-scroll', 'n3-pie-chart', 'ngSanitize', 'ngCsv'])
 
     .run(function ($rootScope, $location, $window, $http, $state,  Auth, Principal, ENV, VERSION) {
         $rootScope.ENV = ENV;
