@@ -16,7 +16,7 @@ angular.module('gestionDemandesApp')
 						$scope.chartData.push({label: state, value: result[state], color: colors(i++)});
 					}
 				}
-				$scope.chartOptions = {thickness: 200};
+				$scope.chartOptions = {thickness: 75};
 			});
 		};
 		
