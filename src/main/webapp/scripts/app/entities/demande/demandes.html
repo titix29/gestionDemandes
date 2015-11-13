@@ -106,7 +106,9 @@
             </ul>
         </nav>
 		
-		<button type="button" ng-csv="demandes" filename="test.csv">Export</button>
+		<button class="btn" ng-csv="demandes" filename="test.csv">
+			<span class="glyphicon glyphicon-list-alt"></span> <span>Export CSV</span>
+		</button>
 		
 		<div>
 			<a ui-sref="demande.stats"><span>Statistiques</span></a>
