@@ -7,15 +7,14 @@ angular.module('gestionDemandesApp')
 				var colors = d3.scale.category10();
 				
 				$scope.chartData = [];
-				var i = 0;
-				// cf. http://stackoverflow.com/questions/9007065/how-to-iterate-json-hashmap
-				// but remove angularjs properties (ex : $promise or $resolved)
-				// TODO : use map to convert from result to chartData
-				for (var state in result) {
-					if (result.hasOwnProperty(state) && state.indexOf('$') == -1) {
-						$scope.chartData.push({label: state, value: result[state], color: colors(i++)});
-					}
-				}
+				// Convert JSON result into chartData-compatible JSON object
+				Object.keys(result).filter(function(key) {
+					// Remove angularjs properties (ex : $promise or $resolved)
+					return key.indexOf('$') == -1;
+				}).forEach(function(key, index) {
+					$scope.chartData.push({label: key, value: result[key], color: colors(index)});
+				});
+				
 				$scope.chartOptions = {thickness: 75};
 			});
 		};
